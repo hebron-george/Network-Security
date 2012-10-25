@@ -1,29 +1,22 @@
 Write a C/C++ program to implement a single DES round based on Figure 3-6, page 70, textbook. Your program should take in a 64 bit (8 byte) input block, and a 48 bit (6 byte) subkey. The requirements concerning the codes are 1) it must be written on your own with no assistance from persons other than the professor or the TA, and 2) it must be clear how the code works when read, which can be accomplished through any combination of variable and function names, comments, and code structure that you wish. Your codes must pass the test cases given below.
 
-Input block 		Key			Output blcok
-5b8ec873bf43a652  eb57c5e9bf1d  bf43a65287a8d09c
+Input block 		Key			Output block
 
+5b8ec873bf43a652  eb57c5e9bf1d  bf43a65287a8d09c
 
 87a8d09c67aeeeaa  ef48f89bff66  67aeeeaa931f12a1
 
-
 931f12a1356f5a3e  1e3f1bd96cd7  356f5a3e4a6556fd
-
 
 4a6556fd17bba23a  cbecccb3774f  17bba23aff89c9c6
 
-
 ff89c9c66e7541f7  f7caa41f61fe  6e7541f7d6deef85
-
 
 d6deef853e2848aa  b8367fe2a4ff  3e2848aadec02b40
 
-
 dec02b40e9555528  c2dbf41e57fb  e955552854985baa
 
-
 54985baaa67a19ce  a7776bc2edf8  a67a19cefbafb85b
-
 
 
 The follow static array provides S-Boxes tables. You may either use it or provide your own structures.
