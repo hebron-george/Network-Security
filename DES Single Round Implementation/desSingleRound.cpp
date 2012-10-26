@@ -21,8 +21,23 @@ int main()
 	string binInputBlock = hexToBin(inputBlock);
 
 	//Left and Right of original binary input
+	//The final result will be (right concat with XOR(left,mangle(key,right)))
 	string left = binInputBlock.substr(0, 32);
 	string right = binInputBlock.substr(32, 32);
+
+
+	char expansionArray[] = {right[31], right[0], right[1], right[2], right[3], right[4], right[3], right[4], right[5], right[6], right[7], right[8], right[7],
+								right[8], right[9], right[10], right[11], right[12], right[11], right[12], right[13], right[14], right[15], right[16], right[15],
+								right[16], right[17], right[18], right[19], right[20], right[19], right[20], right[21], right[22], right[23], right[24], right[23],
+								right[24], right[25], right[26], right[27], right[28], right[27], right[28], right[29], right[30], right[31], right[0]};
+	string expArray;
+
+	for (int i = 0; i < 48; i++)
+		expArray += expansionArray[i];
+
+	cout << expArray << endl;
+
+
 	return 0;
 }
 
